@@ -8,10 +8,11 @@ ocr = MyPaddleOCR()
 
 #### 이미지 인식 처리
 # 테스트 이미지
-image_path = '../res/test.png'
+# image_path = '../res/test.png'
 
 # 그린한식뷔페 메뉴
-# image_path = '../res/menu-20240415.png'
-ocr.run_ocr(img_path=image_path, debug=True)
+image_path = '../res/menu-20240415.png'
+result = ocr.run_ocr(img_path=image_path, debug=True)
+
+print("result ", result)
 # result = ocr.run_ocr(img_path=, debug=True)
-ocr.get_ocr_result()
